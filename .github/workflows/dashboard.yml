@@ -2,9 +2,9 @@ name: Dashboard Build & Test & Deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -39,6 +39,6 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "perfanalytics-dashboard-fisher"
+          heroku_app_name: "fishy-dashboard"
           heroku_email: "fishukee@gmail.com"
           appdir: "perfanalytics-dashboard"
