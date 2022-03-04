@@ -1,7 +1,7 @@
 # Perfanalytics Dashboard
 PerfAnalytics.Dashboard is a dashboard which shows perf related metrics in a visualized way.
 
-You can visit demo from [here!](https://perfanalytics-dashboard-fisher.herokuapp.com/)
+You can visit demo from [here!](https://fishy-dashboard.herokuapp.com/)
 
 ## Installation
 

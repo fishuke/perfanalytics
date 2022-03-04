@@ -2,7 +2,7 @@
 PerfAnalytics.API is a restful API which saves data, posted from PerfAnalytics.JS and returns time specific
 filtered data.
 
-You can visit demo from [here!](https://perfanalytics-api-fisher.herokuapp.com)
+You can visit demo from [here!](https://fishu-api.herokuapp.com)
 
 ## Installation
 
@@ -41,7 +41,3 @@ For testing locally:
 ```bash
 $ npm run benchmark
 ```
-
-## License
-
-Nest is [MIT licensed](LICENSE).
