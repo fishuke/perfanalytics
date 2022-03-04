@@ -1,0 +1,26 @@
+version: "0.0.1"
+
+services:
+  api-prod:
+    container_name: perfanalytics_api
+    image: perfanalytics-api:0.0.1
+    build:
+      context: perfanalytics-api
+      target: production
+      dockerfile: Dockerfile
+    command: node dist/main
+    ports:
+      - 4000:4000
+    restart: unless-stopped
+
+  app-prod:
+    container_name: perfanalytics_dashboard
+    image: perfanalytics-dashboard:0.0.1
+    build:
+      context: perfanalytics-dashboard
+      target: production
+      dockerfile: Dockerfile
+    command: npm run start
+    ports:
+      - 3000:3000
+    restart: unless-stopped

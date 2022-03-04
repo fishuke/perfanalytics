@@ -1,0 +1,44 @@
+.main-container {
+    padding: 1rem;
+}
+
+.time-picker-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.time-picker-container > div{
+    margin: 0.5rem;
+}
+
+.chart-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.chart-container > div{
+    text-align: center;
+    width: 45%;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .chart-container{
+        flex-direction: column !important;
+    }
+    .chart-container > div{
+        width: calc(100% - 2rem) !important;
+    }
+}
+
+.table-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.table-container > div{
+    width: calc(90% + 2rem) !important;
+}
