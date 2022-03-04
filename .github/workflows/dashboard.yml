@@ -3,8 +3,7 @@ name: Dashboard Build & Test & Deploy
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    paths: [ 'dashboard/**/*' ]
 
 jobs:
   build:

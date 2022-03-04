@@ -3,8 +3,7 @@ name: Api Build & Test & Deploy
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    paths: [ 'api/**/*' ]
 
 jobs:
   build:
