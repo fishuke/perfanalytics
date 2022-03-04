@@ -17,7 +17,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./perfanalytics-js
+        working-directory: ./client
 
     steps:
       - uses: actions/cache@v2
@@ -32,11 +32,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-          cache-dependency-path: perfanalytics-js/package-lock.json
+          cache-dependency-path: client/package-lock.json
       - run: npm ci
       - run: npm run build
       - run: npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
-          package: perfanalytics-js/package.json
+          package: client/package.json

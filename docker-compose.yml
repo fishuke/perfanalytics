@@ -5,7 +5,7 @@ services:
     container_name: perfanalytics_api
     image: perfanalytics-api:0.0.1
     build:
-      context: perfanalytics-api
+      context: api
       target: production
       dockerfile: Dockerfile
     command: node dist/main
@@ -17,7 +17,7 @@ services:
     container_name: perfanalytics_dashboard
     image: perfanalytics-dashboard:0.0.1
     build:
-      context: perfanalytics-dashboard
+      context: dashboard
       target: production
       dockerfile: Dockerfile
     command: npm run start
